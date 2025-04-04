@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pravin Jadhav - Portfolio</title>
+    <meta name="description" content="Portfolio Website of Pravin Jadhav" />
+    <meta name="author" content="Pravin Jadhav" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Hedder Section with Navigation -->
+    <header id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="#home" class="logo">Pravin</a>
+          
+          <nav class="desktop-nav">
+            <ul class="nav-links">
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#certifications" class="nav-link">Certifications</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Theme Toggle Buton -->
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </button>
+          </nav>
+          
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <nav id="mobile-nav" class="mobile-nav">
+          <ul class="mobile-nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <!-- Intrduction secton for portflio site -->
+              <h4 class="subtitle">Hello, I'm</h4>
+              <h1 class="title">Pravin Jadhav</h1>
+              <h2 class="profession">Fullstack Web Developer</h2>
+              <!-- breif about experence in devlopment -->
+              <p class="description">
+                I create beautiful, responsive websites that delight users and help businesses grow.
+                With expertise in modern web technologies, I deliver high-quality solutions.
+              </p>
+              
+              <div class="social-icons">
+                <a href="#" aria-label="Github"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+              
+              <!-- downlod resume buttn -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-download"></i>
+                Download Resume
+              </a>
+            </div>
+            
+            <div class="hero-image">
+              <div class="image-container">
+                <img
+                  src="./pravins.jpg"
+                  alt="Pravin Jadhav Profile"
+                  class="profile-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <!-- secton headng -->
+          <h2 class="section-heading">About Me</h2>
+          
+          <div class="about-content">
+            <div class="about-image">
+              <!-- design elemnt for about section -->
+              <div class="design-element top-left"></div>
+              <div class="design-element bottom-right"></div>
+                <img src="./slambook.png" alt="My childhood slambook entry" class="about-detail-img">
+            </div>
+            
+            <div class="about-text">
+              <h3 class="about-title">Full Stack Web Developer</h3>
+              <p>
+                Ever since I was a kid, I dreamed of becoming a computer engineer. I still remember writing it in my school slam book—I
+                didn't fully understand what it meant back then, but I knew I wanted to build things with computers.
+              </p>
+              <div class="slambook-image">
+              </div>
+              <br>
+              <p>
+                That childhood dream stayed with me, even through all the ups and downs. The journey wasn't easy—there were times I felt
+                lost, frustrated, and even thought about quitting. But I kept pushing myself, learning through every setback, and
+                eventually found my path.
+              </p>
+              <br>
+              <p>
+                Today, I'm a passionate Fullstack Developer with 5 years of experience building modern, responsive web applications. I
+                specialize in HTML, CSS, JavaScript, and modern frameworks like React and Node.js, crafting clean, efficient code that
+                brings designs to life and delivers powerful user experiences.
+              </p>
+              
+              <button id="read-more-btn" class="btn btn-outline">
+                Read More
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <!-- sektion headng for skils -->
+          <h2 class="section-heading">My Skills</h2>
+          
+          <div class="skills-container">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 & CSS3</span>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress primary" data-percent="95"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress secondary" data-percent="90"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React</span>
+                <span class="skill-percentage">88%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress primary" data-percent="88"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress secondary" data-percent="85"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-percentage">78%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress primary" data-percent="78"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">UI/UX Design</span>
+                <span class="skill-percentage">82%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress secondary" data-percent="82"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="certifications-section">
+        <div class="container">
+          <!-- certifcation section headng -->
+          <h2 class="section-heading">Certifications</h2>
+          
+          <div class="cards-container">
+            <div class="card">
+              <div class="card-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3" 
+                  alt="Full Stack Web Development"
+                />pan>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Full Stack Web Development</h3>
+                <div class="card-meta">
+                  <span>Udacity</span>
+                  <span>Jan 2023</span>
+                </div>
+                <p class="card-description">Comprehensive program covering frontend and backend technologies including HTML, CSS, JavaScript, and databases.</p>
+                <a href="#" class="btn btn-secondary" target="_blank">
+                  View Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3" 
+                  alt="UI/UX Design Specialization"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">UI/UX Design Specialization</h3>
+                <div class="card-meta">
+                  <span>Coursera</span>
+                  <span>May 2022</span>
+                </div>
+                <p class="card-description">In-depth study of user interface design principles, user research methods, and prototyping techniques.</p>
+                <a href="#" class="btn btn-secondary" target="_blank">
+                  View Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3" 
+                  alt="Advanced JavaScript"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Advanced JavaScript</h3>
+                <div class="card-meta">
+                  <span>Frontend Masters</span>
+                  <span>Oct 2021</span>
+                </div>
+                <p class="card-description">Advanced concepts in JavaScript including closures, prototypal inheritance, and asynchronous programming.</p>
+                <a href="#" class="btn btn-secondary" target="_blank">
+                  View Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-heading">My Projects</h2>
+          
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3" 
+                  alt="E-Commerce Website"
+                />
+                <div class="project-overlay">
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">E-Commerce Website</h3>
+                <p class="project-description">A modern e-commerce platform built with HTML, CSS, and JavaScript.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1611224885990-2ae506f4f181?ixlib=rb-4.0.3" 
+                  alt="Task Management App"
+                />
+                <div class="project-overlay">
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Task Management App</h3>
+                <p class="project-description">A productivity app with drag-and-drop functionality for managing tasks.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-4.0.3" 
+                  alt="Weather Dashboard"
+                />
+                <div class="project-overlay">
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Weather Dashboard</h3>
+                <p class="project-description">A weather application that displays current and forecasted weather.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">API</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixlib=rb-4.0.3" 
+                  alt="Portfolio Website"
+                />
+                <div class="project-overlay">
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-description">A creative portfolio website showcase for photographers with an image gallery.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3" 
+                  alt="Recipe Finder App"
+                />
+                <div class="project-overlay">
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Recipe Finder App</h3>
+                <p class="project-description">An application that helps users find recipes based on available ingredients.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">API</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3" 
+                  alt="Music Streaming App"
+                />
+                <div class="project-overlay">
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Music Streaming App</h3>
+                <p class="project-description">A Spotify-like music streaming application with playlist creation and music playback.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <!-- headng of contect form -->
+          <h2 class="section-heading">Get In Touch</h2>
+          
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Pravin Jadhav"
+                  required
+                />
+              </div>
+              
+              <!-- email input feild -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="askpravinjadhav@gmail.com"
+                  required
+                />
+              </div>
+              
+              <!-- mesage area for quiries -->
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="How can I help you?"
+                  required
+                ></textarea>
+              </div>
+              
+              <button
+                type="submit"
+                class="btn btn-primary submit-btn"
+              >
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <!-- footer with name and postion -->
+            <h3 class="footer-title">Pravin Jadhav</h3>
+            <p class="footer-description">
+              A Full Stack Web Developer based in Pune, India.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          
+          <!-- quick links sectoin -->
+          <div class="footer-links">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-contact">
+            <h3 class="footer-title">Contact Me</h3>
+            <p class="footer-description">Feel free to reach out to me any time. I prefer direct communication.</p>
+            
+            <!-- contct informaation for comunication -->
+            <div class="contact-info">
+              <a href="tel:+911234567890" class="contact-item">
+                <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                <span>+91 7414916030</span>
+              </a>
+              
+              <a href="mailto:pravin.jadhav@example.com" class="contact-item">
+                <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                <span>askpravinjadhav@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="footer-divider" />
+        
+        <div class="copyright">
+          <p>© 2025 Pravin Jadhav. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
